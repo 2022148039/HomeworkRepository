@@ -1,0 +1,25 @@
+.center {
+    text-align:center ;
+    margin: 20px auto; 
+    font-weight: bolder;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3em;
+    color:slategrey
+}
+body {
+    background-color:beige
+  }
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+#already{
+    margin-top: 0px;
+    font-weight:bolder;
+    color:red;
+    padding:5px;
+    border: 5px;
+}
+#gotologin{
+    width: 100px;
+    height: 30px;
+
+}
+  
