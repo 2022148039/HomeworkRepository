@@ -121,7 +121,7 @@ body{
     
 
 @media (max-width: 480px) {
-    .body {
+    .main-items {
         display: flex;
         flex-direction: column;
     }
@@ -129,7 +129,7 @@ body{
 }
 
 @media (min-width: 481px) and (max-width: 800px) {
-    .body {
+    .main-items {
         display: flex;
         flex-direction: column;
     }
