@@ -1,0 +1,33 @@
+body {  
+    margin-top: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color:cornsilk;
+}
+html{
+    max-width:1020px;
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+    max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+}
+.main-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.item:hover {
+    border:rgb(195, 195, 255) 1px solid;
+    cursor: pointer;
+}

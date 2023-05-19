@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> 이준성의 E-commercial WEBSITE </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <h1 class="center">Welcome to E-commerci  al WEBSITE of Junseong Lee!
+    <br>This Website is for making your account
+  </h1>
+  
+  <!-- 가운데 정렬 후 글꼴 밑 그림자 설정 해야하는 부분: h1 타입 선택자로 외부 Css파일에 코딩-->
+  <h3 id="already">If you already signed up? Click "Login" button</h3>
+  <input type="button" value="Login" onclick="window.open('login.html')" id="gotologin">
+
+  <!--cs로 Login.html 가는 버튼 크기 늘리고 디자인!-->
+  <hr style="width:100%;height:2px;background-color:black;">
+  <br><br><br>
+  <form>
+    <fieldset> <!-- 사용자 입력 부분 지정할 field를 set함-->
+      <legend>Enter your information</legend>
+      <ul>
+        <li>
+          <label for="user-name">Name</label>
+          <input type="text" id="user-name" autofocus placeholder="이름을 입력하세요" required>
+        </li>
+        <li>
+          <label for="user-age">Age</label>
+          <input type="number" id="user-age" autocomplete placeholder="나이" min="18" step="1" max="50" required>
+        </li>
+        <li>
+          <label for="user-phone">Phone number</label>
+          <input type="tel" id="user-phone" autocomplete placeholder="010-####-####"
+                pattern="(010)-\d{3,4}-\d{4}">
+        </li>
+        <li>
+          <label for="user-email">E-mail</label>
+          <input type="email" id="user-email" autocomplete placeholder="이메일" required>
+        </li>
+        <li>
+            <label for="uid">ID</label>
+            <input type="text" id="uid"  placeholder="3자 ~ 10자 사이, 공백없이" required>           
+        </li>
+        <li>
+            <label for "upassword">Password</label>
+            <input type="password" id="upassword"  placeholder="숫자,영어,특수기호 포함" required>
+        </li>
+
+        <li>
+          <label for "checkupassword">Checking Password</label>
+          <input type="password" id="checkupassword"  placeholder="숫자,영어,특수기호 포함" required>
+        </li>
+        <li>
+          <p>Grade</p>
+          <label><input type="radio" name="grade" value="1">1학년</label>
+          <label><input type="radio" name="grade" value="2">2학년</label>
+          <label><input type="radio" name="grade" value="3">3학년</label>
+          <label><input type="radio" name="grade" value="4">4학년</label>
+        </li>
+        <br><br>
+        <li>
+          <label><input type="checkbox"  value="Ok">개인정보 이용에 동의합니다</label><br>
+          <label><input type="checkbox"  value="Ok">모든 입력칸에 입력을 완료했습니다.</label>
+        </li>
+      </ul> 
+    </fieldset>
+    <input type="button" value="Sign up">
+    <input type="button" value="Cancel">
+    <!-- CSs로 디자인-->
+  </form>
+
+
+</body>
+</html>   
